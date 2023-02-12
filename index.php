@@ -140,7 +140,7 @@
 require_once 'functions.php';
 
 $x = 12;
-if(ifEven($x)) {
+if(isEven($x)) {
     echo "{$x} is an even number";
 } else {
     echo "{$x} is an odd number";
