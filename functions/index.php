@@ -44,10 +44,47 @@
 // }
 
 // $i = 0;
-// while($i<10) {
+// while($i < 100) {
 //     $i++;
-//     echo $i.PHP_EOL;
+//     echo $i."+";
 // }
+
+// function fun($x,$y){
+//     $x=4;
+//     $y=3;
+//     $z=$x+$y/$y+$x;
+//     echo $z;
+// }
+// fun(3,4);
+
+// $foo = function ($x) { return $x * 2;};
+// $bar = function ($x) use ($foo) {
+//     return $foo($x) + 1;
+// };
+// echo $bar(5);
+
+// function strFunc($str) {
+//     if (strlen($str) == 0) {
+//         return "";
+//     } else {
+//         return strFunc(substr($str, 1)) . substr($str, 0, 1);
+//     }
+// }
+// echo strFunc("hello");
+
+$numbers = array(1, 2, 3, 4, 5);
+$sum = 0;
+foreach  ($numbers as $number) {
+    if ($number % 2 ==0) {
+        continue;
+    }
+    $sum += $number;
+} 
+echo $sum;
+
+$numbers = array(1, 2, 3, 4, 5);
+
+
 // echo PHP_EOL;
 // $n = 0;
 // do{
@@ -139,10 +176,44 @@
 
 require_once 'functions.php';
 
-$x = 12;
-if(isEven($x)) { //Argument
-    echo "{$x} is an even number";
-} else {
-    echo "{$x} is an odd number";
-}
+// $x = 12;
+// if(isEven($x)) { //Argument
+//     echo "{$x} is an even number";
+// } else {
+//     echo "{$x} is an odd number";
+// }
+
+// $x = 3;
+// echo "Factorial of {$x} is ".factorial($x);
+
+
+// serve("Rice", "1 plate");
+
+// function sum(int $x, int $y, int $z):int {
+//     return $x+$y+$z;
+// }
+// echo sum(1,7,8);
+
+
+// function unlimitedArgument(int ...$numbers):int {
+//     $result = 0;
+//     for($i=0; $i<count($numbers); $i++) {
+//         $result += $numbers[$i];
+//     }
+//     return $result;
+// }
+// echo unlimitedArgument(3,2,4,5,3,1,723,3,5);
+
+// Recursive function // recursion
+// function printNumber($counter, $end, $stepping=1) {
+//     if($counter>$end) {
+//         return;
+//     }
+//     echo $counter."\n";
+//     $counter += $stepping;
+//     printNumber($counter, $end, $stepping);
+// }
+// printNumber(14, 34, 2);
+
+
 
