@@ -46,26 +46,5 @@ $products = [
 //     testProducts($product);
 // }
 
-// function testProducts($pr) {
-//     echo "{$pr['name']} - {$pr['price']} </br>";
-// }
 
-// function newName($name="Sabirul", $title="Islam") {
-//     echo "{$name} {$title}<br/>";
-// }
 
-// newName("Sabirul", "");
-
-// function unlimitedArgument(...$n1) {
-//     echo count(func_get_args());
-// }
-// unlimitedArgument(1,2,3,4,5,6,7,8,9,12,44,67);
-
-$data = 12;
-function functionVariable() {
-    global $data;
-
-    $data +=3;
-    echo $data;
-}
-functionVariable();

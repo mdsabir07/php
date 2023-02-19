@@ -72,17 +72,66 @@
 // }
 // echo strFunc("hello");
 
-$numbers = array(1, 2, 3, 4, 5);
-$sum = 0;
-foreach  ($numbers as $number) {
-    if ($number % 2 ==0) {
-        continue;
-    }
-    $sum += $number;
-} 
-echo $sum;
+// $numbers = array(1, 2, 3, 4, 5);
+// $sum = 0;
+// foreach  ($numbers as $number) {
+//     if ($number % 2 ==0) {
+//         continue;
+//     }
+//     $sum += $number;
+// } 
+// echo $sum;
 
-$numbers = array(1, 2, 3, 4, 5);
+// $numbers = array(1, 2, 3, 4, 5);
+
+
+
+// function testProducts($pr) {
+//     echo "{$pr['name']} - {$pr['price']} </br>";
+// }
+
+// function newName($name="Sabirul", $title="Islam") {
+//     echo "{$name} {$title}<br/>";
+// }
+
+// newName("Sabirul", "");
+
+// function unlimitedArgument(...$n1) {
+//     echo count(func_get_args());
+// }
+// unlimitedArgument(1,2,3,4,5,6,7,8,9,12,44,67);
+
+// $data = 12;
+// function functionVariable() {
+//     global $data;
+
+//     $data +=3;
+//     echo $data;
+// }
+// functionVariable();
+
+// function visit() {
+//     static $visit = 0;
+//     $visit++;
+//     echo $visit."\n";
+// }
+// visit();
+// visit();
+// visit();
+// visit();
+
+// function displayProfile($name, $gender, $title="Mr.") {
+//     echo "{$title} {$name}, $gender \n";
+// }
+// displayProfile("Sabir", "Ahmed");
+// displayProfile(gender:"M", name:"Sabir");
+
+// echo str_repeat("*", 64);
+// $name = "Sabirul Islam";
+// $parts = explode(" ", $name);
+// echo $parts[0];
+// echo "\n";
+// echo $parts[1];
 
 
 // echo PHP_EOL;
