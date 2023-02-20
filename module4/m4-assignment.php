@@ -47,6 +47,13 @@ for($i = 0; $i < $n; $i++) {
 // Siam
 // Muhammed
 
+// 4.Write a PHP function to check if a string contains only letters and whitespace.
+$str = " Hello World! ";
+echo trim($str);
+// output
+// ==========
+//     Hello World!
+
 
 // 5.Write a PHP function to find the second largest number in an array of numbers.
 // $number = array(20, 520, 52, 755, 75, 15, 561, 656, 765);
