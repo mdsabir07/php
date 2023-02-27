@@ -112,6 +112,6 @@ Islam
 Sabirul
 */
 
-$str = " Hello World! ";
-echo trim($str);
+// $str = " Hello World! ";
+// echo trim($str);
 
