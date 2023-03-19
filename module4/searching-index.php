@@ -20,6 +20,8 @@ $offset = array_search(55,$numbers);
 echo $offset."\n";
 
 // checking key
-if (key_exists('b',$fruits)) {
+if (key_exists('bb',$fruits)) {
     echo "key b found";
+} else {
+    echo "Not found \n";
 }
