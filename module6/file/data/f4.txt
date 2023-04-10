@@ -1,0 +1,1 @@
+a:2:{i:0;a:5:{s:5:"fname";s:7:"Sabirul";s:5:"lname";s:5:"Islam";s:3:"age";i:35;s:5:"class";i:8;s:4:"roll";i:12;}i:2;a:5:{s:5:"fname";s:8:"Muhammed";s:5:"lname";s:5:"Salam";s:3:"age";i:16;s:5:"class";i:8;s:4:"roll";i:8;}}
