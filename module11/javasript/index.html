@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript practice</title>
+</head>
+
+<body onload="MyEvent('onload hoyeche!')">
+
+    <!-- <button onclick="ObjAlert()">Alert</button> -->
+    <!-- <button onclick="ObjConfrim()">Confirm</button> -->
+    <!-- <button onclick="ObjPrompt()">Prompt</button> -->
+    <!-- <button onclick="ObjOpen()">Open</button> -->
+    <!-- <button onclick="ObjClose()">Close</button> -->
+
+    <button onclick="MyEvent('Click hoyeche!')">Click</button>
+    <button onchange="MyEvent('onchange hoyeche!')">Click</button>
+    <button onmouseover="MyEvent('onmouseover hoyeche!')">Click</button>
+    <button onmouseout="MyEvent('onmouseout hoyeche!')">Click</button>
+    <button onkeydown="MyEvent('onkeydown hoyeche!')">Click</button>
+
+    <script>
+        // document.write("Hello JavaScript");
+
+        // var x=4;
+        // var y=5;
+        // var z=x+y;
+        // document.write(z);
+
+        /*var A = {
+            Name:"Muhammed",
+            Age: 19,
+            Gender:"Male"
+        }
+        document.write(A.Age);*/
+
+        /*var A=['Sabir','Muhammed','Siam','Sazid','Shahadat']
+        document.write(A);*/
+
+        // if else 
+        /*var marks = 35;
+        if (marks >= 80 && marks <= 100) {
+            document.write("A+");
+        } else if (marks < 80 && marks >= 70) {
+            document.write("A");
+        } else if (marks < 70 && marks >= 60) {
+            document.write("A-");
+        } else if (marks < 60 && marks >= 50) {
+            document.write("B");
+        } else if (marks < 50 && marks >= 40) {
+            document.write("C");
+        } else if (marks < 40 && marks >= 33) {
+            document.write("D");
+        } else {
+            document.write("F");
+        }*/
+
+        // switch case
+        /*var Marks = 15;
+        switch (true) {
+            case (Marks>=80 && Marks<=100):
+                document.write("A+");
+            break;
+            case(Marks<80 && Marks>=70):
+                document.write("A");
+            break;
+            case(Marks<70 && Marks>=60): 
+                document.write("A-");
+            break;
+            case(Marks<60 && Marks>=50): 
+                document.write("B");
+            break;
+            case(Marks<50 && Marks>=40): 
+                document.write("C");
+            break;
+            case(Marks<40 && Marks>=33): 
+                document.write("D");
+            break;
+            default:
+                document.write("F");
+        }*/
+
+        /*var i;
+        for(i=0;i<10;i=i+1){
+            document.write(i+"<button>For Loop</button> <br>");
+        }*/
+
+        /*var i;
+        for(i=0;i<10;i=i+1){
+            // if(i==5 || i==8){
+            //     continue;
+            // }
+            if(i===4){
+                break;
+            }
+            document.write(i+"<button>For Loop</button> <br>");
+        }*/
+
+        /* var i=0;
+        while(i<5){
+            document.write(i+"<button>While Loop</button> <br>");
+            i=i+1
+        }*/
+
+        /* var i=0;
+        do{
+            document.write(i+"<button>Do While Loop</button> <br>");
+            i=i+1;
+        }while(i<3);
+        */
+
+        /*function MyNumber(){
+            var num1=32;
+            var num2=23;
+            var num3=num1+num2;
+            document.write(num3+"<br>");
+        }
+        MyNumber();
+        MyNumber();
+        MyNumber();
+        */
+
+        // function parameter
+        /*function Parameter(num1,num2){
+            var num3=num1+num2;
+            document.write(num3+"<br>");
+        }
+        Parameter(22,1);
+        Parameter(44,50);
+        Parameter(22,6);
+
+        function ParameterName(name){
+            document.write(name+"<br>");
+        }
+        ParameterName("Muhammed");
+        ParameterName("Sabir");
+        ParameterName("Sazid");*/
+
+        // function return;
+        /* function ReturnValue(n1,n2){
+            return "Muhamme";
+        }
+        var NewValue=ReturnValue()+"d";
+        document.write(NewValue);*/
+
+        // Object
+        /*var MyPC = {
+            brand: "HUAWEI",
+            pocessior: "AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx     2.10 GHz",
+            dname: "mdsabir07",
+            ram: "8GB",
+            edition: "Windows 11 Home Single Language",
+            isLaptop: true,
+            isSSD: true
+        }
+        document.write(MyPC.brand + "<br>", MyPC.dname + "<br>", MyPC.edition + "<br>", MyPC.pocessior+"<br>",MyPC.isLaptop);*/
+
+        // Array
+        /*var category=["Keyboard","Mouse","Speaker","Headphone","Cable"]
+        //document.write(category) //display all 
+        document.write(category[3])*/
+
+        /*var category = ["Keyboard", "Mouse", "Speaker", "Headphone", "Cable", "RAM", "HDD", "SSD"];
+        var i;
+        for (i = 0; i < category.length; i = i + 1) {
+            document.write(category[i] + "<br>")
+        }*/ 
+
+        // for in loop on Array
+       /* var category = ["Keyboard", "Mouse", "Speaker", "Headphone", "Cable", "RAM", "HDD", "SSD"];
+        for(var product in category){
+            document.write(category[product]+"<br>")
+        }
+        */
+
+        // for in loop on Object
+        /*var Person={
+            name:"Muhammed",
+            age:"19 months",
+            gender:"Male",
+            height:"2.5 feet",
+            location:"Muradnagar"
+        }
+        for(var list in Person){
+            document.write(Person[list]+"<br>")
+        }*/ 
+
+        // Array concat()
+        /*var arr1 = ["Keyboard", "Mouse", "Speaker", "Headphone", "Cable", "RAM", "HDD", "SSD"];
+        var arr2 = ['Sabir','Muhammed','Siam','Sazid','Shahadat'];
+        var arr3 = arr1.concat(arr2);
+        document.write(arr3+"<br>");*/
+
+        // From 
+        /*var Title="Muhammed Bin Sabir";
+        var TitleArray=Array.from(Title);
+        document.write(TitleArray[10]);*/ 
+
+        // Filter 
+        /*var numArry=[34,54,65,45,23,56,87,50];
+        var result=numArry.filter(function(digit){
+            return digit<=50;
+        });
+        document.write(result);*/ 
+
+        // Find and findIndex
+        /* var findArry=[12,22,33,45,55,60,66,85,95];
+        // var result=findArry.find(function(fd){
+        var result=findArry.findIndex(function(fd){
+            return fd>55;
+        });
+        document.write(result);*/ 
+
+        // foreach with array 
+        /* var arrForeach=[22,25,26,40,45,50,60,80,65,96,100];
+        arrForeach.forEach(function(loop){
+            document.write(loop+"<br>");
+        });*/ 
+
+        // includes and indexof
+        /* var arrForeach=[22,25,26,40,45,50,60,80,65,96,100];
+        // var result=arrForeach.includes(50);
+        var result=arrForeach.indexOf(55);
+        document.write(result);*/ 
+
+        // reverse() push() pop()
+        /* var arrForeach=[22,25,26,40,45,50,60,80,65,96,100];
+        // arrForeach.reverse();
+
+        // arrForeach.push(120);
+        // arrForeach.push(130);
+
+        arrForeach.pop();
+        arrForeach.pop();
+        document.write(arrForeach);*/
+
+        //ASC (assending) and DSC (decending)
+        /* var sortArray=[22,25,26,40,45,50,60,80,110, 77, 35, 65,96];
+        //var result=sortArray.sort() 
+        var result=sortArray.sort().reverse() 
+        document.write(result);*/ 
+
+        // slice
+       /* var sliceArray=[22,25,26,40,45,50,60,80,110, 77, 35, 65,96];
+        var result=sliceArray.slice(1,4);
+        document.write(result);*/ 
+
+        // splice()
+        /* var spliceArray=[22,25,26,40,45,50,60,80,110, 77, 35, 65,96];
+        // spliceArray.splice(2,5); //removeItem
+        spliceArray.splice(2,0,29); //add item
+        spliceArray.splice(6,0,49); //add item
+        document.write(spliceArray); */ 
+
+        // charAt(), 
+        /* var country="Bangladesh";
+        document.write(
+            country.charAt(5)
+        )*/
+
+        // concat()
+        /*var country1="Bangladesh ";
+        var country2="Iran";
+        document.write(
+            // country1.concat(country2)
+            country2.concat(country1)
+        )*/
+
+        // IndexOf(), lastIndexOf()
+       /* var country1="Bangladesh";
+        document.write(
+            // country1.indexOf("s")
+            country1.lastIndexOf("a")
+        )*/ 
+
+        // replace()
+        /* var country="Bangladesh";
+        document.write(
+            country.replace("Bangla","Amar-")
+        )*/ 
+
+        // substr(), substring()
+        /*var country="Bangladesh";
+        document.write(
+            // country.substr(0,4)
+            country.substring(5,3)
+        )*/ 
+
+        // toLowerCase(), toUperCase()
+        /*var country="  Bangladesh   ";
+        document.write(
+            // country.toLowerCase()
+            // country.toUpperCase()
+            // country.toLocaleLowerCase()
+            country.toLocaleUpperCase()
+        )*/
+
+        // trim()
+        /*var country1="  Bangladesh           ";
+        var country2=country1.trim();
+        document.write(
+            country1.length,
+            country2.length
+        )*/ 
+
+        // Date()
+        /* var obj = new Date();
+        document.write(
+            obj.getDate(),
+            obj.getDay(),
+            obj.getFullYear(),
+            obj.getHours(),
+            obj.getMonth(),
+            obj.getTimezoneOffset()
+        )*/ 
+
+        // Math
+        // var num=-9;
+        // document.write(
+        //     Math.abs(num)
+        // )
+
+        // var num= 9.7;
+        // document.write(
+        //     Math.ceil(num)
+        // )
+
+        // var num= 0.7;
+        // document.write(
+        //     Math.floor(num)
+        // )
+
+        // document.write(
+        //     Math.max(22,34,54,66)
+        // )
+
+        // document.write(
+        //     Math.min(22,34,54,66)
+        // )
+
+        // document.write(
+        //     Math.random()
+        // )
+
+        // var num=8.5;
+        // // var num=8.4;
+        // document.write(
+        //     Math.round(num)
+        // )
+
+        // Number 
+        // var num = 4;
+        // document.write(
+        //     Number.isFinite(num)
+        // )
+        // document.write(
+        //     Number.isInteger(num)
+        // )
+
+        // var num = "4.6";
+        // document.write(
+        //     // Number.parseFloat(num)
+        //     Number.parseInt(num)
+        // )
+        // var num = 4.65262454512;
+        // document.write(
+        //     // num.toFixed(1)
+        //     num.toFixed(0)
+        //     // num.toFixed(5)
+        // )
+
+        // var num = 4.65262454512;
+        // document.write(
+        //     num.toString()
+        // )
+
+        // WINDOW OBJECT
+        /*function ObjAlert(){
+            alert("Alert!")
+        }
+        function ObjConfrim(){
+            let result= confirm("Do you want to leave!");
+            document.write(result);
+        }
+        function ObjPrompt(){
+            let result= prompt("Write your name.");
+            document.write(result);
+        }
+        function ObjOpen(){
+            open();
+        }
+        function ObjClose(){
+            close();
+        }
+        setTimeout(function(){
+            alert("Alert after 5 mins");
+        },10000);
+        */
+
+
+        // Navigator Object
+        /*var appCodeName= navigator.appCodeName;
+        var appName= navigator.appName;
+        var appVersion= navigator.appVersion;
+        var cookieEnabled= navigator.cookieEnabled;
+        var language= navigator.language;
+        var userAgent= navigator.userAgent;
+        var platform= navigator.platform;
+        var onLine= navigator.onLine;
+
+        document.write(appCodeName+"<br>");
+        document.write(appName+"<br>");
+        document.write(appVersion+"<br>");
+        document.write(cookieEnabled+"<br>");
+        document.write(language+"<br>");
+        document.write(userAgent+"<br>");
+        document.write(platform+"<br>");
+        document.write(onLine+"<br>");
+        */ 
+
+        // Navigator Geolocation
+       /* navigator.geolocation.getCurrentPosition(function(position){
+            let heading = position.coords.heading;
+            let altitude = position.coords.altitude;
+            let latitude = position.coords.latitude;
+            let longitude = position.coords.longitude;
+            let speed = position.coords.speed;
+            let accuracy = position.coords.accuracy;
+
+            document.write("Heading: "+heading+"<br>");
+            document.write("altitude: "+altitude+"<br>");
+            document.write("latitude: "+latitude+"<br>");
+            document.write("longitude: "+longitude+"<br>");
+            document.write("speed: "+speed+"<br>");
+            document.write("accuracy: "+accuracy+"<br>");
+        })
+        */ 
+
+        function MyEvent(msg){
+            console.log(msg);
+        }
+
+    </script>
+</body>
+
+</html>
