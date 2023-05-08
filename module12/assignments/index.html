@@ -76,15 +76,15 @@
     <div id="result"></div>
 
     <script>
-        const weightInput = document.getElementById('weight');
-        const heightInput = document.getElementById('height');
+        const weight = document.getElementById('weight');
+        const height = document.getElementById('height');
         const calculateBtn = document.getElementById('calculateBtn');
         const result = document.getElementById('result');
 
         function calculateBMI() {
-            const weight = Number(weightInput.value);
-            const height = Number(heightInput.value) / 100; 
-            const bmi = weight / (height * height);
+            const w = Number(weight.value);
+            const h = Number(height.value) / 100; 
+            const bmi = w / (h * h);
             result.innerHTML = `BMI is ${bmi.toFixed(2)}`;
         }
 
