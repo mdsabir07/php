@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 HTML DOM Document</title>
+</head>
+<body>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <button onclick="Demo()">Click</button>
+    <script>
+        function Demo(){
+            // let w = window.open();
+            // w.document.open();
+            // w.document.write("Opened at new window");
+            // w.document.close();
+
+            let myItems = document.getElementsByTagName("p");
+            let itemCount = myItems.length;
+            alert(itemCount);
+        }
+    </script>
+</body>
+</html>

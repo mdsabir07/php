@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BMI Calculator</h1>
+    <form>
+        <label for="weightInput">Weight (kg):</label>
+        <input type="number" id="weightInput">
+        <br>
+        <label for="heightInput">Height (cm):</label>
+        <input type="number" id="heightInput">
+        <br>
+        <button type="button" id="calculateBtn">Calculate BMI</button>
+    </form>
+    <div id="result"></div>
+
+    <!-- Part 3: Deploying to Netlify
+
+    To deploy the BMI Calculator to Netlify, you'll need to follow these steps:
+
+    Sign up for a free Netlify account at https://app.netlify.com/signup.
+    Create a new site by clicking on the "New site from Git" button on the dashboard.
+    Connect your GitHub account and select the repository that contains your BMI Calculator files.
+    Configure the build settings by setting the "Build command" to "npm run build" and the "Publish directory" to
+    "dist".
+    Click on the "Deploy site" button to deploy your site.
+    Once your site is deployed, you'll be able to access it at the URL provided by Netlify. -->
+
+    <script src="script.js">
+        const weightInput = document.getElementById('weightInput');
+        const heightInput = document.getElementById('heightInput');
+        const calculateBtn = document.getElementById('calculateBtn');
+        const result = document.getElementById('result');
+
+        function calculateBMI() {
+            const weight = Number(weightInput.value);
+            const height = Number(heightInput.value) / 100; // convert cm to m
+            const bmi = weight / (height * height);
+            result.innerHTML = `Your BMI is ${bmi.toFixed(2)}`;
+        }
+
+        calculateBtn.addEventListener('click', calculateBMI);
+
+    </script>
+</body>
+
+</html>

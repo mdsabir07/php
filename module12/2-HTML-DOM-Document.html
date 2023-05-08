@@ -7,9 +7,21 @@
     <title>2 HTML DOM Document</title>
 </head>
 <body>
-    
+    <p></p>
+    <button onclick="Demo()">Click</button>
     <script>
-        
+        function Demo(){
+            // var info = document.cookie;
+            // var info = document.domain;
+            // var info = document.lastModified;
+            // var info = document.title;
+            // var info = document.URL;
+            // document.getElementsByTagName("p")[0].innerHTML = info;
+
+            document.open('text/html','replace');
+            document.write("<h3>Muhammed Bin Sabir</h3>");
+            document.close();
+        }
     </script>
 </body>
 </html>
