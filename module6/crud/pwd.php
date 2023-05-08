@@ -1,2 +1,2 @@
 <?php
-echo sha1("rabbit2");
+echo sha1('starlord');

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Elements By DOM</title>
+</head>
+<body>
+<!-- 
+    <div id="myId"></div>
+    <h1 class="myClass"></h1>
+    <h1 class="myClass"></h1>
+    <h1 class="myClass"></h1>
+
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p> -->
+
+    <h3 name="nameAttribute"></h3>
+    <h3 name="nameAttribute"></h3>
+    <h3 name="nameAttribute"></h3>
+    <script>
+        // var myElement = document.getElementById("myId");
+        // myElement.innerHTML = "My Id for test"
+
+        // var myClass = document.getElementsByClassName("myClass");
+        // myClass[2].innerHTML = "H2 my class"
+
+        // var myTags = document.getElementsByTagName("p");
+        // myTags[1].innerHTML = "P2 tag"
+
+        var myNames = document.getElementsByName("nameAttribute");
+        myNames[0].innerHTML = "1st NameAttribute";
+    </script>
+</body>
+</html>
