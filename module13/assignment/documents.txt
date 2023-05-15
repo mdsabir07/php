@@ -1,0 +1,60 @@
+# Part 1: Laravel Installation:
+=================================
+=================================
+
+1. Installed latest version (10x) by the terminal and use this comand line... "composer create-project laravel/laravel my-app"
+2. Screenshot of running server for Laravel project... 
+    https://prnt.sc/BEkLoRRLi-tF
+    https://prnt.sc/durnnmrTl3Jk
+
+
+# Part 2: Laravel Folder Structure:
+===================================
+==================================
+
+* app:
+=========
+On this folder has most of the important sub-folder and their files. such as sub-folders are 'Console (Kernel.php)', 'Exceptions (Handler.php)', 'Http ('in the Controllers folder Controller.php)', 'Models (User.php)', 'Providers (has some demo files)'.
+
+* bootstrap:
+=========
+On this folder has cache sub-folder with files(packages.php, services.php) and app.php file.
+
+*config:
+===========
+On this folder has 15 files including app.php, auth.php, broadcasting.php, cache.php, cors.php and so on.
+
+* database:
+============
+On this folder has factories, migrations, seeders sub-folders and their files.
+
+* public:
+============
+On this folder has .htaccess, favicon.ico, index.php and robots.txt files.
+
+* resources:
+=============
+On this folder has css (app.css), js (app.js, bootstrap.js), views (welcome.blade.php) sub-folders and their necessary files.
+
+* routes:
+===========
+The route is a UI/URL related folder. It's most important folder and will be use many more. Speciall on api.php and web.php files.
+
+* storage:
+==========
+On this folder has app, framework, logs sub-floders and their child folder and files.
+
+* tests:
+============
+On this folder has Feature, Unit folders and their files including CreatesApplication.php, TestCase.php files.
+
+* Vendor:
+============
+On this folder has verious types of folders and sub-folder including their files. Such as bin, brick, composer, flip, etc.
+
+*** Screenshot of new Route:
+================
+1. From the editor: https://prnt.sc/sje04zMEwPsu
+2. From the browser: https://prnt.sc/nuUuSIZ4ihpI
+
+
